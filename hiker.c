@@ -14,8 +14,15 @@ int calcFizzBuzz(int inputNumber)
 {
     int result = 0;
     
-    if((inputNumber % 3) == 0)
+    if((inputNumber % 15) == 0){
+        result = 1500;
+    }
+    else if((inputNumber % 3) == 0){
         result = 300;
+    }
+    else if((inputNumber % 5) == 0){
+        result = 500;
+    }
     else
         result = inputNumber;
     

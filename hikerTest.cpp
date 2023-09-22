@@ -25,6 +25,22 @@ TEST(FizzBuzz, testFizz)
     
 }
 
+TEST(FizzBuzz, testBuzz)
+{
+    ASSERT_EQ(500, calcFizzBuzz(5));
+}
+
+TEST(FizzBuzz, testFizzBuzz)
+{
+    ASSERT_EQ(1500, calcFizzBuzz(15));
+}
+
+TEST(FizzBuzz, normalNumber)
+{
+    ASSERT_EQ(1, calcFizzBuzz(1));
+    ASSERT_EQ(7, calcFizzBuzz(7));
+}
+
 int main(int argc, char* argv[])
 {
     ::testing::InitGoogleTest(&argc, argv);
